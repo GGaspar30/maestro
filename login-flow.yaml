@@ -1,0 +1,28 @@
+appId: br.com.qualitor
+---
+- launchApp
+
+- tapOn: "Perfil"
+- tapOn: "Criar novo"
+- tapOn: "Nome do perfil"
+- inputText: "Atendente"
+- tapOn: "URL do Qualitor"
+- eraseText
+- inputText: "http://snuvdev01.qualitorsoftware.com:8080/~ggaspar/8.20"
+- tapOn: "Tipo de perfil"
+- tapOn: "Atendente"
+- tapOn: "Nome de usuário"
+- inputText: "usuario1"
+- tapOn:
+    point: "50%,51%"
+- tapOn: "Selecione a empresa"
+- tapOn: "Empresa 1"
+- tapOn:
+    point: "50%,92%"
+- assertVisible: "Qualitor"
+- assertVisible: "ENTRAR"
+- tapOn: "Senha"
+- inputText: "123"
+- tapOn: "ENTRAR"
+- assertVisible: "Novo atendimento
+     Novos chamados, incidentes e requisições de serviço"
